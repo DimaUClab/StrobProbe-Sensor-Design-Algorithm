@@ -1,5 +1,5 @@
 # StrobProbe-Sensor-Design-Algorithm
-###StrobProbe Catalytic Homogenous DNA SERS Sensor Design Algorithm
+### StrobProbe Catalytic Homogenous DNA SERS Sensor Design Algorithm
 
 Published by: Amanda C. Macke - Dima Group @ University of Cincinnati
 
