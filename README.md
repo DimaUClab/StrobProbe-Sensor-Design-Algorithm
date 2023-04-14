@@ -55,33 +55,34 @@ Note: Current folder = './' - 1 folder back = '../' - Into a new location from t
 
 - This should be a .csv file formatted in the same way as provided in the example (with default settings) that includes the following information in the following order: 
     
-	* Target_Name: This is required so that the output of a given design is saved. If you do not change the name of this, you will overwrite a previous file. Make sure to always use systematic and unique file names to prevent losing files.  Always backup your data! 
+	- Target_Name: This is required so that the output of a given design is saved. If you do not change the name of this, you will overwrite a previous file. Make sure to always use systematic and unique file names to prevent losing files.  Always backup your data! 
 
-	* Target: This is the sequence input you are trying to target. The input may be provided in upper OR lower case letters corresponding to the nucleic acids one would find in a DNA sequence. These letters will then be converted to lowercase letters for the analysis. 
+	- Target: This is the sequence input you are trying to target. The input may be provided in upper OR lower case letters corresponding to the nucleic acids one would find in a DNA sequence. These letters will then be converted to lowercase letters for the analysis. 
 
-	* Salt_Correction: This is the concentration of your monovalent salt. It is dependent on the experimental buffer used (and or is the concentration of the salt used) 
+	- Salt_Correction: This is the concentration of your monovalent salt. It is dependent on the experimental buffer used (and or is the concentration of the salt used) 
 
-    Temperature: This is the experimental temperature used. Keep in mind, room temperature is usually considered as 25 *C. The temperature used is extremely important for these experiments.  
+	- Temperature: This is the experimental temperature used. Keep in mind, room temperature is usually considered as 25 *C. The temperature used is extremely important for these experiments.  
+	
+	- ΔGibbs_PHT_Maximum: The ΔGibbs Maximum for your range in kcal/mol for the PlaceHolder-Target hybrid 
 
-    ΔGibbs_PHT_Maximum: The ΔGibbs Maximum for your range in kcal/mol for the PlaceHolder-Target hybrid 
+	- ΔGibbs_PHT_Minimum: The ΔGibbs Minimum for your range in kcal/mol for the PlaceHolder-Target hybrid 
 
-    ΔGibbs_PHT_Minimum: The ΔGibbs Minimum for your range in kcal/mol for the PlaceHolder-Target hybrid 
+	- ToeHold_Minimum: This is used for the minimum length of Toe Hold 1 which is on the final PlaceHolder for the Target to grab onto. Toe Hold 2 has to be longer than Toe Hold 1  
 
-    ToeHold_Minimum: This is used for the minimum length of Toe Hold 1 which is on the final PlaceHolder for the Target to grab onto. Toe Hold 2 has to be longer than Toe Hold 1  
+	- ΔΔ Gibbs_PHT_PPH: The change in Gibbs between the PlaceHolder-Target hybrid and the Probe-PlaceHolder hybrid. This is used as a thermodynamic check to evaluate if the placeholder will preferentially bind as expected 
 
-    Δ Δ Gibbs_PHT_PPH: The change in Gibbs between the PlaceHolder-Target hybrid and the Probe-PlaceHolder hybrid. This is used as a thermodynamic check to evaluate if the placeholder will preferentially bind as expected 
+	- P_Hairpin_Minimum: This is the minimum length of the probe hairpin. For now, it is 3 which is the minimum number of nucleic acids required to form a hairpin structure. 
 
-    P_Hairpin_Minimum: This is the minimum length of the probe hairpin. For now, it is 3 which is the minimum number of nucleic acids required to form a hairpin structure. 
+	- Probe_Spacer: This is the sequence of A added to the nano-star end of the probe sequence 
 
-    Probe_Spacer: This is the sequence of A added to the nano-star end of the probe sequence 
+	- Fuel_Loop: Sequence given to create loop between neck and complement for proper hairpin formation  
 
-    Fuel_Loop: Sequence given to create loop between neck and complement for proper hairpin formation  
+	- F_Hairpin_Minimum: Min length the fuel hairpin can be 
 
-    F_Hairpin_Minimum: Min length the fuel hairpin can be 
+	- ΔΔ Gibbs_FPH_TPH_Maximum: You want the Δ Δ Gibbs to be more negative than Δ Δ Gibbs_PHT_PPH from a previous variable input 
 
-    Δ Δ Gibbs_FPH_TPH_Maximum: You want the Δ Δ Gibbs to be more negative than Δ Δ Gibbs_PHT_PPH from a previous variable input 
+	- ΔΔ Gibbs_FPH_TPH_Minimum: Needed to provide a targeted window. Experiments show that this value should be more negative to drive the reaction, but if it is too negative the PlaceHolder will not behave as needed. 
 
-    Δ Δ Gibbs_FPH_TPH_Minimum: Needed to provide a targeted window. Experiments show that this value should be more negative to drive the reaction, but if it is too negative the PlaceHolder will not behave as needed. 
 ###########################################################################
 Output File (ProbeDesign_{TARGET_NAME}.txt): 
 - All of the pertinent sequence strand, hybrid, and hairpin information is stored in the output file. The sections are separated by which sequences are being built and evaluated. The appropriate sequences associated with the design parameters are displayed at the bottom. 
