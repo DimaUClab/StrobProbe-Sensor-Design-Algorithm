@@ -21,7 +21,7 @@ This python code was delevoped on a linux system but can be ran in any python en
 
 ###########################################################################
 
-Programmed with Python 3.8 & access to python libraries included in Anaconda (numpy, pandas, seqfold & Biopython) 
+Programmed with Python 3.9 & access to python libraries included in Anaconda (numpy, pandas, seqfold & Biopython) 
 
 From seqfold (https://pypi.org/project/seqfold/) calculates the ∆G for a hairpin at a certain T.
 
