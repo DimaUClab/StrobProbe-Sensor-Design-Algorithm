@@ -25,24 +25,30 @@ Programmed with Python 3.8 & access to python libraries included in Anaconda (nu
 From seqfold (https://pypi.org/project/seqfold/) calculates the ∆G for a hairpin at a certain T.
 
 From biopython (https://biopython.org/docs/1.75/api/Bio.SeqUtils.MeltingTemp.html) 
-    you need to install the biopython library to allow parsing of DNA sequences and accept user input and complement the sequence 
+- you need to install the biopython library to allow parsing of DNA sequences and accept user input and complement the sequence 
 
 Dependencies Used: 
+
 numpy == 1.22.4 
+
 pandas == 1.4.4 
+
 seqfold == 0.7.15 
+
 biopython == 1.81 
 
 ###########################################################################
 
-Abbreviations Used: 
+#### Abbreviations Used: 
 P: Probe - PH: PlaceHolder - T: Target – F: Fuel 
 
-General Description Algorithm Logic (StrobeProbe_2023.py): 
+#### General Description Algorithm Logic (StrobeProbe_2023.py): 
 This program is used to determine the sequences and thermodynamics for designing a catalytic homogeneous DNA sensor using SERS based on a provided target (T). There is an input file (Sensor_Parameters.csv) that contains the needed user input – all input information must be included. The placeholder (PH) is the complement of the input T strand. Toe Hold 1 (TH1) for the T to hybridize with PH is determined by truncating the beginning of the PH strand. The beginner fuel (F) is determined from the T sequence as it needs to be the complement of the PH. The final F strand has to complete a haripin secondary structure, so an input series of “T” bases are added to the end of the beginner F sequence. A series of complementary bases are added to form the neck of the hairpin when the hairpin is closed. Finally, Toe Hold 2 (TH2) for PH to hybridize with F is determined by truncating the opposite end of the beginner F sequence that complements the opposite end of PH from TH1. This is the initiating site for PH-F hybridization. Because this piece is already a part of the PH and F, it does not need to be extracted. The probe (P) is determined from the complement of the PH. The P also has to form a hairpin, so the complementary sequence of bases from the opposite end of the P is added to the end. The sensor molecule has to have enough space to interact with the nanostar without sterically hindering the formation of the hairpin, so a spacer of “A” bases are added to the end that attaches to the nanostar to complete the probe sequence. All sequence hybridization thermodynamic properties are calculated based on data from [Santa Lucia & Hicks Annual Review of Biophysics and Biomolecular Structure 2004] and are used as strand hybridization checks for formation from experimental values. SeqFold is used to check energetics associated with hairpin formation. 
 
 ###########################################################################
-Input file (Sensor_Parameters.csv): 
+
+#### Input file (Sensor_Parameters.csv): 
+
 - A file including the necessary information regarding the system and sensor trying to be built. The name and location is typically ran from the same location, but variables are provided in lines 16 (INPUT_FILE_NAME) & 17 (INPUT_FILE_LOC) to be changed for your convenience.  
 Note: Current folder = './' - 1 folder back = '../' - Into a new location from the current folder = ‘./new_folder/’ 
 
