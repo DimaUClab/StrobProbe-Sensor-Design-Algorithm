@@ -107,4 +107,4 @@ Toe Hold 2 (TH2) : Includes the last X elements (randomly generated) of the Plac
 Toe Hold 1 (TH1) : Includes the first X elements of the Place Holder NOT included in the Probe 
 
 
-# Thanks for using StrobeProbe.py for your DNA Sensor Design Needs!
+## Thanks for using StrobeProbe.py for your DNA Sensor Design Needs!
