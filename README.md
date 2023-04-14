@@ -8,16 +8,20 @@ In Collaboration with the Strobbia, Dima and Stan Groups
 Details of the applied analysis can be found in the original publication: (Link Coming)
 
 ########################################################################### 
+
 Welcome to the StrobProbe DNA Sensor Design Algorithm  
 Developed in Collaboration with the Strobbia, Dima & Stan Research Groups  
 University of Cincinnati  
 VERSION 10 
+
 ############################################################################ 
+
 This python code was delevoped on a linux system but can be ran in any python environment. In linux, the code is most easily executed from a terminal with the following command: 
 
 > python3 StrobProbe_2023.py 
 
 ###########################################################################
+
 Programmed with Python 3.8 & access to python libraries included in Anaconda (numpy, pandas, seqfold & Biopython) 
 # From seqfold (https://pypi.org/project/seqfold/) calculates the ∆G for a hairpin at a certain T. 
 # From biopython (https://biopython.org/docs/1.75/api/Bio.SeqUtils.MeltingTemp.html) 
@@ -30,6 +34,7 @@ seqfold == 0.7.15
 biopython == 1.81 
 
 ###########################################################################
+
 Abbreviations Used: 
 P: Probe - PH: PlaceHolder - T: Target – F: Fuel 
 
