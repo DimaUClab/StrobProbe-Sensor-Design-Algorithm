@@ -55,11 +55,11 @@ Note: Current folder = './' - 1 folder back = '../' - Into a new location from t
 
 - This should be a .csv file formatted in the same way as provided in the example (with default settings) that includes the following information in the following order: 
     
--- Target_Name: This is required so that the output of a given design is saved. If you do not change the name of this, you will overwrite a previous file. Make sure to always use systematic and unique file names to prevent losing files.  Always backup your data! 
+* Target_Name: This is required so that the output of a given design is saved. If you do not change the name of this, you will overwrite a previous file. Make sure to always use systematic and unique file names to prevent losing files.  Always backup your data! 
 
--- Target: This is the sequence input you are trying to target. The input may be provided in upper OR lower case letters corresponding to the nucleic acids one would find in a DNA sequence. These letters will then be converted to lowercase letters for the analysis. 
+* Target: This is the sequence input you are trying to target. The input may be provided in upper OR lower case letters corresponding to the nucleic acids one would find in a DNA sequence. These letters will then be converted to lowercase letters for the analysis. 
 
--- Salt_Correction: This is the concentration of your monovalent salt. It is dependent on the experimental buffer used (and or is the concentration of the salt used) 
+* Salt_Correction: This is the concentration of your monovalent salt. It is dependent on the experimental buffer used (and or is the concentration of the salt used) 
 
     Temperature: This is the experimental temperature used. Keep in mind, room temperature is usually considered as 25 *C. The temperature used is extremely important for these experiments.  
 
