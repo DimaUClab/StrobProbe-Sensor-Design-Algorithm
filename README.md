@@ -9,10 +9,10 @@ Details of the applied analysis can be found in the original publication: (Link 
 
 ########################################################################### 
 
-Welcome to the StrobProbe DNA Sensor Design Algorithm  
-Developed in Collaboration with the Strobbia, Dima & Stan Research Groups  
-University of Cincinnati  
-VERSION 10 
+# Welcome to the StrobProbe DNA Sensor Design Algorithm  
+# Developed in Collaboration with the Strobbia, Dima & Stan Research Groups  
+# University of Cincinnati  
+## VERSION 10 
 
 ############################################################################ 
 
@@ -23,8 +23,8 @@ This python code was delevoped on a linux system but can be ran in any python en
 ###########################################################################
 
 Programmed with Python 3.8 & access to python libraries included in Anaconda (numpy, pandas, seqfold & Biopython) 
-# From seqfold (https://pypi.org/project/seqfold/) calculates the ∆G for a hairpin at a certain T. 
-# From biopython (https://biopython.org/docs/1.75/api/Bio.SeqUtils.MeltingTemp.html) 
+From seqfold (https://pypi.org/project/seqfold/) calculates the ∆G for a hairpin at a certain T. 
+From biopython (https://biopython.org/docs/1.75/api/Bio.SeqUtils.MeltingTemp.html) 
     you need to install the biopython library to allow parsing of DNA sequences and accept user input and complement the sequence 
 
 Dependencies Used: 
