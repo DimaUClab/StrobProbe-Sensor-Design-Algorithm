@@ -8,12 +8,10 @@ In Collaboration with the Strobbia, Dima and Stan Groups
 Details of the applied analysis can be found in the original publication: (Link Coming)
 
 ########################################################################### 
-
 # Welcome to the StrobProbe DNA Sensor Design Algorithm  
-# Developed in Collaboration with the Strobbia, Dima & Stan Research Groups  
-# University of Cincinnati  
-## VERSION 10 
-
+### Developed in Collaboration with the Strobbia, Dima & Stan Research Groups  
+### University of Cincinnati  
+### VERSION 10 
 ############################################################################ 
 
 This python code was delevoped on a linux system but can be ran in any python environment. In linux, the code is most easily executed from a terminal with the following command: 
