@@ -2,6 +2,7 @@
 ### StrobProbe Catalytic Homogenous DNA SERS Sensor Design Algorithm
 
 Published by: Amanda C. Macke - Dima Group @ University of Cincinnati
+email for questions (mackeac@mail.uc.edu)
 
 Authored by: Steven Quarin, Amanda C. Macke, Lyndsay Kissell, Maria S. Kelly, Ashan Dayananda, Joseph Ungvary, George Stan, Ruxandra I. Dima and Pietro Strobbia
 In Collaboration with the Strobbia, Dima and Stan Groups
